@@ -71,57 +71,73 @@ function truncate(str) {
 test = truncate("Well, that's 15st, like, your opinion man.");
 test;
 
-function ciEmailify(str){
-  newName = ''
-  for (char of str){
-    if(char === ' '){
-      newName += '.'
-    } else {
-      newName += char
-    }
-  }
-  return newName.toLowerCase() + "@codeimmersives.com"
+function ciEmailify(str) {
+	newName = "";
+	for (char of str) {
+		if (char === " ") {
+			newName += ".";
+		} else {
+			newName += char;
+		}
+	}
+	return newName.toLowerCase() + "@codeimmersives.com";
 }
 
-function reverse(str){
-  revStr = ''
-  for (i = str.length - 1; i >= 0; i--){
-    revStr += str[i]
-  }
-  return revStr
+function reverse(str) {
+	revStr = "";
+	for (i = str.length - 1; i >= 0; i--) {
+		revStr += str[i];
+	}
+	return revStr;
 }
 
-function onlyVowels(str){
-  vowStr = ''
-  for (letter of str){
-    if(letter === 'a' ||
-    letter === 'A' ||
-    letter === 'e' ||
-    letter === 'E' ||
-    letter === 'i' ||
-    letter === 'I' ||
-    letter === 'o' ||
-    letter === 'O' ||
-    letter === 'u' ||
-    letter === 'U')
-    {
-      vowStr += letter
-    }
-  }
-  return vowStr
+function onlyVowels(str) {
+	vowStr = "";
+	for (letter of str) {
+		if (
+			letter === "a" ||
+			letter === "A" ||
+			letter === "e" ||
+			letter === "E" ||
+			letter === "i" ||
+			letter === "I" ||
+			letter === "o" ||
+			letter === "O" ||
+			letter === "u" ||
+			letter === "U"
+		) {
+			vowStr += letter;
+		}
+	}
+	return vowStr;
 }
 
 //Not Working yet and getting annoyed...moving on for now
-function crazyCase(str){
-  crazyStr = ''
-  for (i = 0; i > str.length; i++){
-    if(i % 2 === 0){
-      crazyStr += str[i].toUpperCase()
-  } else {
-    crazyStr += str[i].toLowerCase()
-  }
+function crazyCase(str) {
+	crazyStr = "";
+	for (i = 0; i > str.length; i++) {
+		if (i % 2 === 0) {
+			crazyStr += str[i].toUpperCase();
+		} else {
+			crazyStr += str[i].toLowerCase();
+		}
+	}
+	return crazyStr;
 }
-return crazyStr
+
+function titleCase(str) {
+  title = ''
+  for (i = 0; i < str.length; i++){
+    if ((i === 0) ||
+    (str[i - 1] === " " && i >= 1)
+    ){
+      title += str[i].toUpperCase()
+    }
+    else {
+      title += str[i].toLowerCase()
+    }
+  }
+  return title
 }
 
 /********************************************
