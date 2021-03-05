@@ -83,6 +83,14 @@ function ciEmailify(str){
   return newName.toLowerCase() + "@codeimmersives.com"
 }
 
+function reverse(str){
+  revStr = ''
+  for (i = str.length - 1; i >= 0; i--){
+    revStr += str[i]
+  }
+  return revStr
+}
+
 
 /********************************************
  * CODE DOWN HERE IS FOR INTERNAL USE ONLY. *
