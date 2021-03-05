@@ -67,8 +67,6 @@ function truncate(str) {
 		return str;
 	}
 }
-test = truncate("Well, that's 15st, like, your opinion man.");
-test;
 
 function ciEmailify(str) {
 	newName = "";
@@ -114,7 +112,7 @@ function onlyVowels(str) {
 //Not Working yet and getting annoyed...moving on for now
 function crazyCase(str) {
 	crazyStr = "";
-	for (i = 0; i > str.length; i++) {
+	for (i = 0; i < str.length; i++) {
 		if (i % 2 === 0) {
 			crazyStr += str[i].toUpperCase();
 		} else {
