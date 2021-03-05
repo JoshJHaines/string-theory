@@ -140,6 +140,24 @@ function titleCase(str) {
   return title
 }
 
+function camelCase(str){
+  camel1 = ''
+  camel2 = ''
+  for (i = 0; i < str.length; i++){
+    if (str[i - 1] === " " && i >= 1){
+      camel1 += str[i].toUpperCase()
+    }
+    else {
+      camel1 += str[i].toLowerCase()
+    }
+  }
+  for (letter of camel1){
+    if (letter !== " "){
+      camel2 += letter
+    }
+  }
+return camel2
+}
 /********************************************
  * CODE DOWN HERE IS FOR INTERNAL USE ONLY. *
  *           PLEASE DON'T TOUCH!            *
