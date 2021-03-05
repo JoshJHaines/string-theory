@@ -111,6 +111,18 @@ function onlyVowels(str){
   return vowStr
 }
 
+//Not Working yet and getting annoyed...moving on for now
+function crazyCase(str){
+  crazyStr = ''
+  for (i = 0; i > str.length; i++){
+    if(i % 2 === 0){
+      crazyStr += str[i].toUpperCase()
+  } else {
+    crazyStr += str[i].toLowerCase()
+  }
+}
+return crazyStr
+}
 
 /********************************************
  * CODE DOWN HERE IS FOR INTERNAL USE ONLY. *
