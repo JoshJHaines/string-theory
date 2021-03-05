@@ -18,6 +18,13 @@ function yellingChars(str){
   return newStr
 }
 
+function indexedChars(str){
+  newStr = ''
+  for (i = 0; i < str.length; i++){
+    newStr += i + str[i]
+  }
+  return newStr
+}
 
 
 
