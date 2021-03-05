@@ -91,6 +91,26 @@ function reverse(str){
   return revStr
 }
 
+function onlyVowels(str){
+  vowStr = ''
+  for (letter of str){
+    if(letter === 'a' ||
+    letter === 'A' ||
+    letter === 'e' ||
+    letter === 'E' ||
+    letter === 'i' ||
+    letter === 'I' ||
+    letter === 'o' ||
+    letter === 'O' ||
+    letter === 'u' ||
+    letter === 'U')
+    {
+      vowStr += letter
+    }
+  }
+  return vowStr
+}
+
 
 /********************************************
  * CODE DOWN HERE IS FOR INTERNAL USE ONLY. *
