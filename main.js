@@ -26,6 +26,14 @@ function indexedChars(str){
   return newStr
 }
 
+function numberedChars(str){
+  newStr = ''
+  for (i = 0; i < str.length; i++){
+    newStr += `(${i + 1})` + str[i]
+  }
+  return newStr
+}
+
 
 
 
