@@ -54,7 +54,7 @@ function repeatIt(str, n) {
 	}
 	return newStr;
 }
-
+//Not Working yet and getting annoyed...moving on for now
 function truncate(str) {
 	newStr = "";
 	if (str.length >= 19) {
@@ -70,6 +70,20 @@ function truncate(str) {
 }
 test = truncate("Well, that's 15st, like, your opinion man.");
 test;
+
+function ciEmailify(str){
+  newName = ''
+  for (char of str){
+    if(char === ' '){
+      newName += '.'
+    } else {
+      newName += char
+    }
+  }
+  return newName.toLowerCase() + "@codeimmersives.com"
+}
+
+
 /********************************************
  * CODE DOWN HERE IS FOR INTERNAL USE ONLY. *
  *           PLEASE DON'T TOUCH!            *
