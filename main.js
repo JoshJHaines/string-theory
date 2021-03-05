@@ -10,6 +10,13 @@ function xify(str){
   return newStr
 }
 
+function yellingChars(str){
+  newStr = ''
+  for (letter of str){
+    newStr += letter + '!'
+  }
+  return newStr
+}
 
 
 
