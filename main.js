@@ -54,11 +54,10 @@ function repeatIt(str, n) {
 	return newStr;
 }
 
-//Not Working yet and getting annoyed...moving on for now
 function truncate(str) {
 	newStr = "";
 	if (str.length >= 19) {
-		for (i = 0; i >= 14; i++) {
+		for (i = 0; i <= 14; i++) {
 			newStr += str[i];
 		}
 		newStr;
