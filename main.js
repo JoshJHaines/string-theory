@@ -55,8 +55,21 @@ function repeatIt(str, n) {
 	return newStr;
 }
 
-function truncate(str) {}
-
+function truncate(str) {
+	newStr = "";
+	if (str.length >= 19) {
+		for (i = 0; i >= 14; i++) {
+			newStr += str[i];
+		}
+		newStr;
+		newStr += "...";
+		return newStr;
+	} else {
+		return str;
+	}
+}
+test = truncate("Well, that's 15st, like, your opinion man.");
+test;
 /********************************************
  * CODE DOWN HERE IS FOR INTERNAL USE ONLY. *
  *           PLEASE DON'T TOUCH!            *
