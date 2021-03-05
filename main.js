@@ -34,6 +34,19 @@ function numberedChars(str){
   return newStr
 }
 
+function exclaim(str){
+  newStr = ''
+  for (char of str){
+    if (char === "?" ||
+    char === "."){
+      newStr += "!"
+    } else {
+      newStr += char
+    }
+  }
+  return newStr
+}
+
 
 
 
