@@ -112,15 +112,25 @@ function onlyVowels(str) {
 //Not Working yet and getting annoyed...moving on for now
 function crazyCase(str) {
 	crazyStr = "";
+  countLetters = 0
 	for (i = 0; i < str.length; i++) {
-		if (i % 2 === 0) {
-			crazyStr += str[i].toUpperCase();
-		} else {
-			crazyStr += str[i].toLowerCase();
-		}
+    if (str[i] !== " "){
+      if (countLetters % 2 === 0) {
+        crazyStr += str[i].toLowerCase();
+        countLetters+=1
+      } else {
+        crazyStr += str[i].toUpperCase();
+        countLetters+=1
+      }
+    } else {
+      crazyStr += ' ';
+      countLetters+=1
+    }
 	}
 	return crazyStr;
 }
+test = crazyCase("multiple words here")
+test 
 
 function titleCase(str) {
 	title = "";
@@ -152,7 +162,25 @@ function camelCase(str) {
 	return camel2;
 }
 
-function crazyCase2ReturnOfCrazyCase(str) {}
+function crazyCase2ReturnOfCrazyCase(str) {
+  crazyStr = "";
+  countLetters = 0
+	for (i = 0; i < str.length; i++) {
+    if (str[i] !== " "){
+      if (countLetters % 2 === 0) {
+        crazyStr += str[i].toLowerCase();
+        countLetters+=1
+      } else {
+        crazyStr += str[i].toUpperCase();
+        countLetters+=1
+      }
+    } else {
+      crazyStr += ' ';
+    }
+	}
+	return crazyStr;
+}
+
 /********************************************
  * CODE DOWN HERE IS FOR INTERNAL USE ONLY. *
  *           PLEASE DON'T TOUCH!            *
