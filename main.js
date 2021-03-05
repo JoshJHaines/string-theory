@@ -46,14 +46,14 @@ function exclaim(str) {
 	return newStr;
 }
 
-//Not Working yet and getting annoyed...moving on for now
 function repeatIt(str, n) {
-	newStr = "";
-	for (i = 0; i >= n; i++) {
+  newStr = ''
+	for (i = 0; i < n; i++) {
 		newStr = newStr + str;
 	}
 	return newStr;
 }
+
 //Not Working yet and getting annoyed...moving on for now
 function truncate(str) {
 	newStr = "";
