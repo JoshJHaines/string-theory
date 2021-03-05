@@ -2,7 +2,13 @@
  * YOUR CODE HERE *
  ******************/
 
-
+function xify(str){
+  newStr = ''
+  for (letter of str){
+    newStr += 'x'
+  }
+  return newStr
+}
 
 
 
